@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+.grid-container > * {
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+}
+
+.Tabular{
+  border: 5px black solid;
+  background-color: rgba(233, 233, 233, 0.596);
+  width: 360px;
+  height: 390px;
+}
+
+.Logo{
+  width: 550px;
+  max-width: 50%;
+}
+
+.Titulo{
+  text-align: center;
+  text-decoration: none;
+}
+
+.Forgot{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.barra{
+  width: 350px;
+  height: 38px;
+  font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+
+.barra2{
+  width: 350px;
+  height: 38px;
+  font-family: 'Times New Roman', Times, serif, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-decoration: none;
+  color: aliceblue; 
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: darkblue;
+  color: rgb(189, 160, 0);
+  font-size: 30px;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header"  100px
+    "navbar"  50px
+    "main"    auto
+    "sidebar" 100px
+    "footer"  100px;
+}
+
+@media (min-width: 600px) {
+  .grid-container {
+
+    grid-template:
+      "header  header" 100px
+      "navbar  navbar" 50px
+      "sidebar main"   auto
+      "footer  footer" 100px /
+      200px    auto;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  100px
+      "navbar  main   sidebar" auto
+      "footer  footer footer"  100px /
+      200px    auto   200px;
+  }
+}

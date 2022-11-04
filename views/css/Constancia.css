@@ -1,0 +1,35 @@
+.Constancia_Estudiante{
+    font-size: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.Title{
+    text-align: center;
+    border: 2px #2a58ee;
+    background-color: #2a58ee;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: center;
+}
+
+.form-Estudiante{
+    width: 150px;
+    height: 30px;
+    margin: 0.5rem;
+    background: transparent;
+}
+
+select {
+    background: transparent;
+    font-size: 14px;
+    height: 30px;
+    padding: 5px;
+    width: 150px;
+}
+
+.border{
+    border: 5px rgb(0, 0, 0) solid;
+}

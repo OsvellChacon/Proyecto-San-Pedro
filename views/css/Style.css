@@ -1,0 +1,27 @@
+.formulario{
+	background-color: #58ee2a;	
+	border: 2px #f0b800 solid;
+}
+
+.Titulo{
+	color: rgb(0, 0, 0);
+}
+
+.mini-title{
+	color: rgb(0, 0, 0);
+}
+
+label{
+	font-size: 20px;
+}
+
+.barra{
+	max-width: 400px;
+	max-height: 300px;
+	border: 1px black solid;
+	background-color: aliceblue;
+}
+
+.Emergencia{
+	color: rgb(194, 5, 5);
+}
